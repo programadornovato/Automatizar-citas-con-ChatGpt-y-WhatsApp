@@ -77,5 +77,9 @@ if ($mensaje != null) {
     "Importante: No invento ni añado ninguna información que no se me haya proporcionado. Todo mi trabajo se basa en los datos que recibo.";
     "Solo si me lo piden doy informacion de la empresa, Nombre de la empresa: " . $rowCompania['company'] . ", Ubicación: " . $rowCompania['address'] . " " . $rowCompania['contact'] . ". ";
 
-    file_put_contents("system.txt", $system);
+    require_once "chatgpt.php";
+    $respuesta = preguntaChatgpt($system, $pregunta, $telefonoCliente,$listaCategorias);
+    //ESCRIBIMOS LA RESPUESTA
+    file_put_contents("respuesta.txt", $respuesta);
+
 }
