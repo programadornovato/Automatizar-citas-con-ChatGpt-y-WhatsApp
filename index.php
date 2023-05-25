@@ -81,5 +81,8 @@ if ($mensaje != null) {
     $respuesta = preguntaChatgpt($system, $pregunta, $telefonoCliente,$listaCategorias);
     //ESCRIBIMOS LA RESPUESTA
     file_put_contents("respuesta.txt", $respuesta);
+    require_once "whatsapp.php";
+    //ENVIAMOS LA RESPUESTA VIA WHATSAPP
+    enviar($mensaje, $respuesta, $id, $timestamp, $telefonoCliente);
 
 }
