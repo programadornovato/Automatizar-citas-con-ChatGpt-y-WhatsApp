@@ -9,8 +9,8 @@ class Config {
         $remoto=true;
         if ($remoto) {
             // Coloca estos valores si remoto es true
-            $this->apiKeyChatgpt = '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';
-            $this->tokenWa = 'EAANIQCCaMQIBAEy04T3GZAyeyuq9xF86U2aF03gbbeKsskTCiDgEOAyyojgLTYdJeKrKMiw1ZCnfZB6pwy1GjCq8STvDNFoNwULIenq4silHFobn0AUsHUInucvqZAyTLqexYMQskQZAtNQyaIGCzLwMIx5n3EwprbRoZC9Kc04qZArlcFTNZCebKptfQerwreZCl6HL9ACr1dwZDZD';
+            $this->apiKeyChatgpt = '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';
+            $this->tokenWa = 'EAANIQCCaMQIBAM1cIHPp640kaa6fbVXNxyoiGEAQYubPdlI0PsmfTEiZBWZCENX1ZAyGDIC3IHiu3meSGiDU6tTg2Kyam7yjOPVXZAyYpNkrB4byIldswdGmwv1nAZABD3MaO2a5nD4TPe3Dhgbbpd9AGpzylWyrhp0ZBqKFNIvkcwKh8t87QlzZC34fsmpNlni1Eu9slLLRwZDZD';
             $this->telefonoIDWa = '116907067953774';
         } else {
             // Coloca estos valores si remoto es false

@@ -86,8 +86,7 @@ function preguntaChatgpt($system, $pregunta, $telefonoCliente,$listaCategorias){
         }
         $sintomas = trim($respuestaDividida[4]);
         require_once('crearCita.php');
-        //$fechaCita=creaCita($cliente,$telefono, $edad, $especialidad, $sintomas);
-        //actualizarCitaCreada($telefono);
+        $fechaCita=creaCita($cliente,$telefono, $edad, $especialidad, $sintomas);
         global $textoCita;
         //a $fechaCita darle formato dia mes año hora y minuto
         
